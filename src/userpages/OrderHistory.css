@@ -1,0 +1,45 @@
+.orders-content {
+    flex: 1;
+    padding: 32px;
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .page-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1f2937;
+  }
+  
+  .page-description {
+    color: #6b7280;
+    margin-bottom: 24px;
+  }
+  
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9fafb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .order-table th,
+  .order-table td {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+  }
+  
+  .order-table th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+    color: #374151;
+  }
+  @media (max-width: 991px) {
+    .desktop-sidebar {
+      display: none;
+    }
+  }

@@ -1,0 +1,234 @@
+.account-settings {
+    flex: 1;
+    padding: 32px;
+    background-color: #fff;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  
+  .tab-header {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #d1d5db;
+  }
+  
+  .tab-header button {
+    background: none;
+    border: none;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #6b7280;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+  }
+  
+  .tab-header button.active {
+    color: #111827;
+    border-bottom: 2px solid #111827;
+  }
+  
+  .tab-content .tab-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  
+  .field {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 12px;
+  }
+  
+  .field label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #111827;
+  }
+  .edit-input {
+    font-size: 1rem;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #f9fafb;
+    width: 100%;
+    max-width: 360px;
+    color: #111827;
+  }
+  
+  
+  .field-value {
+    font-size: 16px;
+    color: #374151;
+  }
+  
+  .edit-link {
+    font-size: 14px;
+    color: #2563eb;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .edit-link.danger {
+    color: #dc2626;
+  }
+  
+  .placeholder {
+    color: #6b7280;
+    font-style: italic;
+  }
+  /* src/userpages/AccountSettings.css */
+.account-settings {
+    flex: 1;
+    padding: 30px 40px;
+    background: #fff;
+  }
+  
+  .page-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .tab-header {
+    display: flex;
+    gap: 30px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+  }
+  
+  .tab-header button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  .tab-header .active {
+    color: black;
+    border-bottom: 2px solid #111;
+  }
+  
+  .tab-panel {
+    max-width: 500px;
+  }
+  
+  .field {
+    margin-bottom: 24px;
+    position: relative;
+  }
+  
+  .field label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  .field-value {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .edit-link {
+    color: #111;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+  
+  .edit-link.danger {
+    color: #c0392b;
+  }
+  
+  .edit-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .edit-actions button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .save-btn {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    opacity: 0.7;
+  }
+  
+  .save-btn:hover {
+    opacity: 1;
+  }
+  
+  .cancel-btn {
+    background: none;
+    border: none;
+    color: #111;
+    text-decoration: underline;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+   
+  }
+
+  .password-input {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.password-input input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+  color: #555;
+}
+
+.password-rules {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+  color: #c0392b;
+  font-size: 14px;
+}
+
+.password-rules li {
+  margin: 4px 0;
+}
+
+@media (max-width: 991px) {
+  .desktop-sidebar {
+    display: none;
+  }
+}
+
+  

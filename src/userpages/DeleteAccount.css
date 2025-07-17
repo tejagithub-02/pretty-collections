@@ -1,0 +1,25 @@
+.delete-content {
+    flex: 1;
+    padding: 32px;
+    background: #fff;
+  }
+  
+  .warning-text {
+    background: #fef2f2;
+    color: #991b1b;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+    font-weight: 500;
+  }
+  
+  .delete-btn {
+    background: #dc2626;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  

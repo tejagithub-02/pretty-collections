@@ -1,0 +1,134 @@
+/* AllProducts.css */
+
+.all-products-wrapper {
+    padding: 50px 30px;
+    background: #fafafa;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+  }
+  
+  .all-products-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .all-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+  }
+  
+  .all-products-column {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  }
+  
+  .category-heading {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #34495e;
+  }
+  
+  .all-products-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .all-products-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .all-products-column ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 14px;
+    transition: all 0.2s ease;
+  }
+  
+  .all-products-column ul li a:hover {
+    color: #0072ff;
+    text-decoration: underline;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 600px) {
+    .all-products-title {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    .category-heading {
+      text-align: center;
+    }
+  
+    .all-products-column ul li a {
+      text-align: center;
+      display: block;
+    }
+  }
+  
+  /* Animation keyframes */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply animations */
+  .all-products-wrapper {
+    padding: 50px 30px;
+    background: #fafafa;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+  }
+  
+  .all-products-column {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    animation: slideIn 0.5s ease forwards;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Optional stagger animation using delay (for JS implementation) */
+  .all-products-column:nth-child(1) { animation-delay: 0.1s; }
+  .all-products-column:nth-child(2) { animation-delay: 0.2s; }
+  .all-products-column:nth-child(3) { animation-delay: 0.3s; }
+  .all-products-column:nth-child(4) { animation-delay: 0.4s; }
+  .all-products-column:nth-child(5) { animation-delay: 0.5s; }
+  
+  /* Enhance hover effect */
+  .all-products-column:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  

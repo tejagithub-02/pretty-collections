@@ -1,0 +1,113 @@
+/* BulkOrder.css */
+.bulk-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa, #fffde7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  .bulk-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    animation: slideIn 0.5s ease;
+  }
+  
+  .bulk-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .bulk-icon {
+    font-size: 42px;
+    color: #00796b;
+    margin-bottom: 10px;
+  }
+  
+  .bulk-header h2 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+  }
+  
+  .bulk-header p {
+    font-size: 14px;
+    color: #607d8b;
+  }
+  
+  .bulk-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .bulk-form label {
+    display: block;
+    font-size: 14px;
+    color: #455a64;
+    margin-bottom: 6px;
+  }
+  
+  .bulk-form input,
+  .bulk-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s ease;
+  }
+  
+  .bulk-form input:focus,
+  .bulk-form textarea:focus {
+    border-color: #00796b;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.2);
+  }
+  
+  .bulk-btn {
+    width: 100%;
+    padding: 12px;
+    background: #00796b;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .bulk-btn:hover {
+    background: #004d40;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 121, 107, 0.3);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .bulk-card {
+      padding: 30px 20px;
+    }
+  
+    .bulk-header h2 {
+      font-size: 22px;
+    }
+  }
+  

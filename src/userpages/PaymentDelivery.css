@@ -1,0 +1,38 @@
+.payment-content {
+    flex: 1;
+    padding: 32px;
+    background: #fff;
+  }
+  
+  .page-description {
+    margin-bottom: 20px;
+    color: #6b7280;
+  }
+  
+  .info-box {
+    background: #f3f4f6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .info-box h4 {
+    margin-bottom: 6px;
+  }
+  
+  .update-btn {
+    background: #10b981;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 991px) {
+    .desktop-sidebar {
+      display: none;
+    }
+  }
+  
