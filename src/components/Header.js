@@ -15,9 +15,9 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const offers = [
-    "🏍️ Upto 50% Off on Business Cards",
+    
     "🚚 Free Delivery on Orders Above ₹499",
-    "🎨 Custom T-shirts at 30% Off",
+    "🎨 Custom Blouses at 30% Off",
     "📦 20% Off on First Order",
     "💼 Office Supplies Discounted Today!",
     "📢 Bulk Order? Get Special Discounts!",

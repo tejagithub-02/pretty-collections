@@ -124,4 +124,27 @@
     margin-left: 120px; /* ✅ Moves button slightly to the right */
   }
 }
+@media (max-width: 400px) {
+  .enquiry-form-section {
+    padding: 60px 16px;
+  }
+
+  .enquiry-form-section h2 {
+    font-size: 2rem;
+  }
+
+  .enquiry-form {
+    padding: 24px;
+  }
+
+  .enquiry-form button {
+    font-size: 1rem;
+    padding-top: 20px;
+  
+    margin: 50%; /* ✅ Moves button slightly to the right */
+    margin-top: 50px;
+    margin-bottom: -30px;
+  }
+}
+
 
