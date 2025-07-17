@@ -30,10 +30,10 @@ const Footer = () => {
           <div>
             <h4>Policies</h4>
             <ul>
-              <li><Link to="/terms">Terms & Conditions</Link></li>
-              <li><Link to="/privacy">Privacy Policy</Link></li>
-              <li><Link to="/copyright">Copyright</Link></li>
-              <li><Link to="/patents">Patents & Trademarks</Link></li>
+              <li><Link to="/terms#top">Terms & Conditions</Link></li>
+              <li><Link to="/privacy#top">Privacy Policy</Link></li>
+              <li><Link to="/copyright#top">Copyright</Link></li>
+              <li><Link to="/patents#top">Patents & Trademarks</Link></li>
             </ul>
           </div>
           <div className="footer-contact">

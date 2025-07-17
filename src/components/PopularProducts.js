@@ -23,7 +23,7 @@ const PopularProducts = () => {
   const openWhatsApp = (title) => {
     console.log(`WhatsApp button clicked for: ${title}`); // Debugging
     const message = encodeURIComponent(`Hi, I'm interested in "${title}". Please provide more details.`);
-    window.open(`https://wa.me/+919618591044?text=${message}`, '_blank');
+    window.open(`https://wa.me/+919353556442?text=${message}`, '_blank');
   };
 
   return (

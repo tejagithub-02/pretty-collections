@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';  // Added useEffect import
 import styled, { keyframes } from 'styled-components';
 import { fadeIn, slideInUp } from 'react-animations';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+
 
 // Animations
 const fadeInAnimation = keyframes`${fadeIn}`;
@@ -17,6 +17,7 @@ const Container = styled.div`
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   color: #2d2d2d;
+  min-height: calc(100vh - 200px); /* Added to ensure content pushes footer down */
 `;
 
 const Title = styled.h1`
@@ -55,11 +56,14 @@ const Section = styled.div`
 `;
 
 const Privacy = () => {
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-     
-
-      <Container>
+      <Container id="top"> {/* Added id for direct linking */}
         <Title>Privacy and Cookie Policy</Title>
         <UpdatedDate>Last updated: July, 2025</UpdatedDate>
 
@@ -68,10 +72,10 @@ const Privacy = () => {
             This Vista Privacy and Cookie Notice <strong>("Privacy Notice")</strong> describes how Vista and its signature services, including VistaPrint, VistaCreate, 99designs by Vista, and Vista Corporate Solutions (collectively, <strong> "we", "our"</strong> or <strong>"us"</strong>), collects, uses, and shares your personal information when you use and access our websites and mobile sites <strong> ("Sites")</strong>, applications <strong> ("Apps")</strong>, services and other tools we offer.
           </p>
           <p>
-          This Privacy Notice applies to all users of our Vista Services, including unregistered and registered consumer users, business users, and employee of a business users, designer contributors, customers and potential customers (collectively, “user”, “you” or “your”), and to all Vista Services that link to this Privacy Notice.
+            This Privacy Notice applies to all users of our Vista Services, including unregistered and registered consumer users, business users, and employee of a business users, designer contributors, customers and potential customers (collectively, "user", "you" or "your"), and to all Vista Services that link to this Privacy Notice.
           </p>
           <p>
-          Please keep in mind that this Privacy Notice does not apply to personal information collected by third-party websites and apps that may post links or advertisements on or otherwise be accessible from our Sites and Apps. We advise you to read the privacy notices of these third parties when you visit their websites or apps in order to understand how such third parties collect and use your personal information.
+            Please keep in mind that this Privacy Notice does not apply to personal information collected by third-party websites and apps that may post links or advertisements on or otherwise be accessible from our Sites and Apps. We advise you to read the privacy notices of these third parties when you visit their websites or apps in order to understand how such third parties collect and use your personal information.
           </p>
         </Section>
 

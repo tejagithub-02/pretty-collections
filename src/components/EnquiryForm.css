@@ -61,7 +61,7 @@
   align-self: flex-start;
   margin-top: 30px;
   margin-bottom: -10px;
-  margin-left: 270px; /* ✅ Moves the button to the right */
+  margin-left: 180px; /* ✅ Moves the button to the right */
 }
 
 
@@ -121,10 +121,10 @@
   .enquiry-form button {
     font-size: 1rem;
     
-    margin-left: 120px; /* ✅ Moves button slightly to the right */
+    margin-left: 160px; /* ✅ Moves button slightly to the right */
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 565px) {
   .enquiry-form-section {
     padding: 60px 16px;
   }
@@ -139,11 +139,9 @@
 
   .enquiry-form button {
     font-size: 1rem;
-    padding-top: 20px;
+    margin-left:35px;
   
-    margin: 50%; /* ✅ Moves button slightly to the right */
-    margin-top: 50px;
-    margin-bottom: -30px;
+    
   }
 }
 

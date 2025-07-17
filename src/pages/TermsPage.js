@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';  // Added useEffect import
 import styled, { keyframes } from 'styled-components';
 import { fadeIn, slideInUp } from 'react-animations';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+
 
 // Animations
 const fadeInAnimation = keyframes`${fadeIn}`;
@@ -16,6 +16,7 @@ const Container = styled.div`
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   color: #2d2d2d;
+  min-height: calc(100vh - 200px); /* Added to ensure content pushes footer down */
 `;
 
 const Title = styled.h1`
@@ -44,11 +45,16 @@ const Section = styled.div`
 `;
 
 const TermsPage = () => {
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-    
-      <Container>
+      <Container id="top"> {/* Added id for direct linking */}
         <Title>General Terms & Conditions</Title>
+
 
         <Section>
           <h2>Acceptance of General Terms & Conditions</h2>

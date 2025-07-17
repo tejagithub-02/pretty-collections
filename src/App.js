@@ -41,6 +41,7 @@ const HomePage = () => (
     <Banner />
     <CategoryCarousel />
     <PopularProducts />
+    
     <TrendingProducts />
     <BrandedProducts />
     <ExploreMore />

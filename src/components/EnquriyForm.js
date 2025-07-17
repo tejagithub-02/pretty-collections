@@ -45,14 +45,7 @@ const EnquiryForm = () => {
           required
         />
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+       
 
         <input
           type="tel"
@@ -63,14 +56,7 @@ const EnquiryForm = () => {
           required
         />
 
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          rows="5"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
+       
 
         <button type="submit1">Submit Enquiry via WhatsApp</button>
       </form>
